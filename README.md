@@ -23,7 +23,7 @@ dfs：
   1. 幸运盒子
 
 leetcode:
-  simple：
+  1. simple：
     1. 双数之和
     2. 数字翻转
     3. 数字回文
