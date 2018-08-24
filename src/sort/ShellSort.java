@@ -3,6 +3,7 @@ package sort;
 import java.util.Random;
 
 /**
+ * 利用当序列接近顺序时插入排序效率高的特性。先使用较大步长，对序列中间隔为步长的元素序列进行粗略排序，逐渐缩短步长。粗略排序使得序列接近有序。
  * Created by zhaiyi on 2018/8/12.
  */
 public class ShellSort {
