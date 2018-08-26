@@ -30,7 +30,6 @@ public class TwoNumSum {
                 map.put(array[i], i);
             }
         }
-        String s = new String();
 
     }
 }
