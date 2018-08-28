@@ -1,4 +1,4 @@
-package leetcode.simple;
+package leetcode.simple.dynamic_programming;
 
 /**
  * 动态规划准则：最优子结构、边界、状态转移方程

@@ -1,4 +1,4 @@
-package leetcode.simple;
+package leetcode.simple.array_string;
 
 import java.util.Scanner;
 

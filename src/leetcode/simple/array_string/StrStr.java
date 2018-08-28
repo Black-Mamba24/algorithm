@@ -1,4 +1,4 @@
-package leetcode.simple;
+package leetcode.simple.array_string;
 
 /**
  * Created by zhaiyi on 2018/8/25.

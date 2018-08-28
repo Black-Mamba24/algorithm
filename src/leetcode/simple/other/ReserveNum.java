@@ -1,4 +1,4 @@
-package leetcode.simple;
+package leetcode.simple.other;
 
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
