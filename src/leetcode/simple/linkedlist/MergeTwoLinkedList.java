@@ -1,5 +1,7 @@
 package leetcode.simple.linkedlist;
 
+import leetcode.ListNode;
+
 /**
  * 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
  * Created by zhaiyi on 2018/8/24.
@@ -25,14 +27,5 @@ public class MergeTwoLinkedList {
             tail = tail.next;
         }
         return head.next;
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
     }
 }
