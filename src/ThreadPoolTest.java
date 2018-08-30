@@ -16,9 +16,12 @@ public class ThreadPoolTest {
                 activeCount = executor.getActiveCount();
                 queueSize = executor.getQueue().size();
                 poolSize = executor.getPoolSize();
-//                if (activeCount == 0 && queueSize != 0) {
                 System.out.printf("poolSize: %d, activeCount: %d, queueSize: %d\n",poolSize, activeCount, queueSize);
-//                }
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         });
         check.start();
@@ -27,14 +30,12 @@ public class ThreadPoolTest {
         while (i++ < 1000) {
             executor.submit(() -> {
                 try {
-                    Thread.sleep(random.nextInt(5));
+                    Thread.sleep(20000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             });
-            if (i % 100 == 0) {
-                Thread.sleep(random.nextInt(100));
-            }
+            Thread.sleep(1000);
         }
     }
 }
