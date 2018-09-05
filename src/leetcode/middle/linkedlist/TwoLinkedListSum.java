@@ -1,4 +1,4 @@
-package leetcode.middle;
+package leetcode.middle.linkedlist;
 
 import leetcode.ListNode;
 
@@ -13,7 +13,7 @@ import leetcode.ListNode;
  输出：7 -> 0 -> 8
  原因：342 + 465 = 807
 
- 跟数组类似，注意进位即可，必须使用36-50的方法，不能用另一个指针指向非空链表
+ 思路：跟数组类似，注意进位即可，必须使用36-50的方法，不能用另一个指针指向非空链表
  * Created by zhaiyi on 2018/8/29.
  */
 public class TwoLinkedListSum {
