@@ -45,8 +45,8 @@ public class MaxProfit {
         if (prices == null || prices.length <= 1) {
             return 0;
         }
-        int minPrice = prices[0];
-        int maxProfit = 0;
+        //边界
+        int minPrice = prices[0], maxProfit = 0;
         for (int i = 1; i < prices.length; i++) {
             maxProfit = Math.max(prices[i] - minPrice, maxProfit);
             if (prices[i] < minPrice) {

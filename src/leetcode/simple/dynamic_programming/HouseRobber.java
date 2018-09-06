@@ -15,7 +15,6 @@ package leetcode.simple.dynamic_programming;
  */
 public class HouseRobber {
     public int rob(int[] nums) {
-        int max = 0;
         if (nums == null || nums.length == 0) {
             return 0;
         }
