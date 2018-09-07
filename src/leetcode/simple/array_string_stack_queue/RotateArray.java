@@ -1,4 +1,4 @@
-package leetcode.simple.array_string;
+package leetcode.simple.array_string_stack_queue;
 
 /**
  * Created by zhaiyi on 2018/9/4.

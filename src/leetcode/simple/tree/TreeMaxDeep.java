@@ -12,20 +12,16 @@ public class TreeMaxDeep {
     int max = 0;
 
     public int maxDepth(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        traverse(root, 1);
+        traverse(root, 0);
         return max;
     }
 
     public void traverse(TreeNode node, int deep) {
         if (node != null) {
-            if (deep > max) {
-                max = deep;
-            }
-            traverse(node.left, deep + 1);
-            traverse(node.right, deep + 1);
+            traverse (node.left, deep + 1);
+            traverse (node.right, deep + 1);
+        } else {
+            max = Math.max(max,deep);
         }
     }
 }
