@@ -1,4 +1,4 @@
-package leetcode.simple.linkedlist;
+package leetcode.simple.linkedlist.recursion;
 
 import leetcode.ListNode;
 

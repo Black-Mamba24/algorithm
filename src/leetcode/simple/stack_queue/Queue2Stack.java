@@ -1,4 +1,4 @@
-package leetcode.simple.array_string_stack_queue;
+package leetcode.simple.stack_queue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

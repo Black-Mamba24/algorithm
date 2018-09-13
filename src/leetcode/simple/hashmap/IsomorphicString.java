@@ -1,4 +1,4 @@
-package leetcode.simple.array_string_stack_queue;
+package leetcode.simple.hashmap;
 
 import java.util.HashMap;
 import java.util.Map;

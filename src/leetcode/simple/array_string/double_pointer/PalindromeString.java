@@ -1,4 +1,4 @@
-package leetcode.simple.array_string_stack_queue;
+package leetcode.simple.array_string.double_pointer;
 
 /**
  * 给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
@@ -13,7 +13,7 @@ package leetcode.simple.array_string_stack_queue;
 
  输入: "race a car"
  输出: false
- 这道题唯一要注意的是相差是32的不一定都是下小写字母，例如0P
+ 思路：明显的双指针法，唯一要注意的是相差是32的不一定都是下小写字母，例如0P
  * Created by zhaiyi on 2018/8/30.
  */
 public class PalindromeString {

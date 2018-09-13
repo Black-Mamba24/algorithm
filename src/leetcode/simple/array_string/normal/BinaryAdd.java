@@ -1,4 +1,4 @@
-package leetcode.simple.array_string_stack_queue;
+package leetcode.simple.array_string.normal;
 
 /**
  *

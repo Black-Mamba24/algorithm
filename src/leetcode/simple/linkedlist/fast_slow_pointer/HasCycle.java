@@ -1,4 +1,4 @@
-package leetcode.simple.linkedlist;
+package leetcode.simple.linkedlist.fast_slow_pointer;
 
 import leetcode.ListNode;
 
@@ -7,7 +7,7 @@ import leetcode.ListNode;
 
  进阶：
  你能否不使用额外空间解决此题？
- 思路：如果有环，快指针一定能套圈慢指针
+ 思路：明显的快慢指针法
  * Created by zhaiyi on 2018/8/31.
  */
 public class HasCycle {
