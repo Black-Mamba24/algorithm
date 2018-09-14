@@ -1,6 +1,21 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.simple_resursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
+ * 计算给定二叉树的所有左叶子之和。
+
+ 示例：
+
+     3
+    / \
+   9  20
+  /  \
+ 15   7
+
+ 在这个二叉树中，有两个左叶子，分别是 9 和 15，所以返回 24
+
+ 思路：简单递归，递归参数为是否为左子树
  * Created by zhaiyi on 2018/9/7.
  */
 public class LeftNodeSum {

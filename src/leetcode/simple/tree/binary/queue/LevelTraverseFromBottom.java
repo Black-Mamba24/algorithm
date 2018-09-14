@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.queue;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.simple_resursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +14,11 @@ import java.util.List;
 
  输入:
 
- 1
- /   \
+    1
+  /   \
  2     3
- \
- 5
+  \
+  5
 
  输出: ["1->2->5", "1->3"]
 

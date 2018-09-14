@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.double_recursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
  * 给定一个二叉树，判断它是否是高度平衡的二叉树。

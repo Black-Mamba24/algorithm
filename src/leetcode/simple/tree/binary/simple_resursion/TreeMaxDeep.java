@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.simple_resursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
  * 给定一个二叉树，找出其最大深度。

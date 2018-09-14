@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.bst;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
  * 给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。
@@ -7,12 +9,12 @@ package leetcode.simple.tree;
 
  例如，给定如下二叉搜索树:  root = [6,2,8,0,4,7,9,null,null,3,5]
 
-        _______6______
-       /              \
-    ___2__          ___8__
-   /      \        /      \
-  0      _4       7       9
- /  \
+         _______6______
+        /              \
+     ___2__          ___8__
+    /      \        /      \
+   0       4       7       9
+  /  \
  3   5
 
  思路：利用二叉搜索树的特性，只要落在[p, q]之内就是最近公共祖先，否则递归左子树或右子树

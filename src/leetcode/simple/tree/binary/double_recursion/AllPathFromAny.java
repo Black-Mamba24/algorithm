@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.double_recursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
  * 给定一个二叉树，它的每个结点都存放着一个整数值。

@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.simple_resursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
  * 翻转一棵二叉树。

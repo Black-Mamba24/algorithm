@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.simple_resursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
  *给定两个二叉树，编写一个函数来检验它们是否相同。
@@ -23,15 +25,5 @@ public class SameTree {
         } else {
             return false;
         }
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }

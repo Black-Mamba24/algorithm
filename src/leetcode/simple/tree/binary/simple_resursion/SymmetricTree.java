@@ -1,4 +1,6 @@
-package leetcode.simple.tree;
+package leetcode.simple.tree.binary.simple_resursion;
+
+import leetcode.simple.tree.binary.TreeNode;
 
 /**
  * 给定一个二叉树，检查它是否是镜像对称的。
@@ -9,6 +11,7 @@ package leetcode.simple.tree;
    2   2
   / \ / \
  3  4 4  3
+ 思路：同时递归左右子树
  * Created by zhaiyi on 2018/8/28.
  */
 public class SymmetricTree {
