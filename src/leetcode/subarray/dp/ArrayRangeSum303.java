@@ -1,4 +1,4 @@
-package leetcode.dynamic_programming;
+package leetcode.subarray.dp;
 
 /**
  * 给定一个整数数组  nums，求出数组从索引 i 到 j  (i ≤ j) 范围内元素的总和，包含 i,  j 两点。
@@ -19,14 +19,14 @@ package leetcode.dynamic_programming;
 
  * Created by zhaiyi on 2018/9/8.
  */
-public class ArrayRangeSum {
+public class ArrayRangeSum303 {
     public static void main(String[] args) {
-        ArrayRangeSum arrayRangeSum = new ArrayRangeSum(new int [] {-2, 0, 3, -5, 2, -1});
+        ArrayRangeSum303 arrayRangeSum303 = new ArrayRangeSum303(new int [] {-2, 0, 3, -5, 2, -1});
     }
 
 //    public int [][] dp;
 //
-//    public ArrayRangeSum(int[] nums) {
+//    public ArrayRangeSum303(int[] nums) {
 //        dp = new int[nums.length][nums.length];
 //        for (int x = 0; x < nums.length; x++) {
 //            dp[x][x] = nums[x];
@@ -44,7 +44,7 @@ public class ArrayRangeSum {
 
     public int [] dp;
 
-    public ArrayRangeSum(int[] nums) {
+    public ArrayRangeSum303(int[] nums) {
         if (nums.length > 0) {
             dp = new int[nums.length];
             dp[0] = nums[0];

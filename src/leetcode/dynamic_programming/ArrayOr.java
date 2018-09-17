@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ * 898，超时
  * Created by zhaiyi on 2018/9/2.
  */
 public class ArrayOr {
