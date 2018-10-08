@@ -1,4 +1,4 @@
-package leetcode.tree.binary.simple_resursion;
+package leetcode.tree.binary.resursion;
 
 import leetcode.tree.binary.TreeNode;
 
