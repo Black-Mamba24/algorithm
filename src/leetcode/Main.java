@@ -8,32 +8,46 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();
-        main.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
+        System.out.println(main.champagneTower(6,3,1));
     }
 
-    public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < nums.length; i++) {
-            set.add(nums[i]);
+    public double champagneTower(int poured, int query_row, int query_glass) {
+        double[][] glass = new double[query_row + 1][query_row + 1];
+        glass[0][0] = poured;
+        if (poured == 0) {
+            return 0.0;
+        } else if (poured == 1) {
+            if (query_row == 0 && query_glass == 0) {
+                return 1.0;
+            } else {
+                return 0.0;
+            }
         }
-        List<List<Integer>> res = new ArrayList<>();
-        Set<String> set1 = new HashSet<>();
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (set.contains(-nums[i] - nums[j])) {
-                    String s = "" + nums[i] + nums[j] + (-nums[i] - nums[j]);
-                    if (!set1.contains(s)) {
-                        List<Integer> l = new ArrayList<>();
-                        l.add(nums[i]);
-                        l.add(nums[j]);
-                        l.add(-nums[i] - nums[j]);
-                        res.add(l);
-                        set1.add(s);
+        for (int i = 1; i < query_row + 1; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                if (j == 0) {
+                    //每行第一个
+                    glass[i][j] = (double) (glass[i - 1][j] - 1) / 2;
+                } else if (j == i) {
+                    //每行最后一个
+                    glass[i][j] = (double) (glass[i - 1][j - 1] - 1) / 2;
+                } else {
+                    if (glass[i - 1][j - 1] > 1) {
+                        glass[i][j] += (double) (glass[i - 1][j - 1] - 1) / 2;
+                    }
+                    if (glass[i - 1][j] > 1) {
+                        glass[i][j] += (double) (glass[i - 1][j] - 1) / 2;
                     }
                 }
             }
         }
-        return res;
+        if (glass[query_row][query_glass] > 1.0) {
+            return 1.0;
+        } else if (glass[query_row][query_glass] < 0.0) {
+            return 0.0;
+        } else {
+            return glass[query_row][query_glass];
+        }
     }
+
 }

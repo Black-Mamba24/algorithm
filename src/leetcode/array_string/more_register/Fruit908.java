@@ -1,6 +1,7 @@
 package leetcode.array_string.more_register;
 
 /**
+ * 水果成篮。竞赛题。
  * Created by zhaiyi on 2018/9/16.
  */
 public class Fruit908 {

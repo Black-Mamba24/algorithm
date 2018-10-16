@@ -19,7 +19,8 @@ package leetcode.array_string.double_pointer;
 public class PalindronString2 {
     public static void main(String[] args) {
         PalindronString2 palindronString2 = new PalindronString2();
-        System.out.println(palindronString2.validPalindrome("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"));
+        System.out.println(palindronString2.validPalindrome(
+                "aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"));
     }
 
     public boolean validPalindrome(String s) {

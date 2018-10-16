@@ -5,6 +5,8 @@ package leetcode.array_string.normal;
  给定两个二进制字符串，返回他们的和（用二进制表示）。
 
  输入为非空字符串且只包含数字 1 和 0。
+
+ 思路：例如：111 + 11，应从大数、小数末尾开始遍历，big_index - delta等于small_index，找到上下对齐的位。注意进位加进位，更新进位即可。
  * Created by zhaiyi on 2018/8/27.
  */
 public class BinaryAdd {

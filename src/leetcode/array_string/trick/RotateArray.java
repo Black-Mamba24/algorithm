@@ -12,7 +12,7 @@ package leetcode.array_string.trick;
  向右旋转 2 步: [6,7,1,2,3,4,5]
  向右旋转 3 步: [5,6,7,1,2,3,4]
 
- 思路：小技巧
+ 思路：原地平移数组技巧：先整体翻转，再分段翻转
  * Created by zhaiyi on 2018/9/4.
  */
 public class RotateArray {

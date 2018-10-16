@@ -16,7 +16,7 @@ package leetcode.array_string.double_pointer;
  输入的数组长度范围在 [1, 10,000]。
  输入的数组可能包含重复元素 ，所以升序的意思是<=。
 
- 思路：从左到右计算最大值，从右到左计算最小值
+ 思路：从左到右计算最大值，从右到左计算最小值，因为要找头尾位置，是隐含的双指针法
  * Created by zhaiyi on 2018/9/18.
  */
 public class SmallestUnsortedSubarray581 {
