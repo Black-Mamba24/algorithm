@@ -1,6 +1,8 @@
 package string;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 /**
@@ -25,6 +27,8 @@ public class NumberString {
             System.out.print(array[i]);
         }
         System.out.println();
+
+        PriorityQueue<Integer> queue = new PriorityQueue<>((o1, o2) -> o1 - o2);
     }
 }
 

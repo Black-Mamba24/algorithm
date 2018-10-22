@@ -20,8 +20,6 @@ import java.util.*;
  */
 public class OnlyOneNumberOthersThreeTimes {
     public int singleNumber(int[] nums) {
-        List<Integer> list = new ArrayList();
-        list.sort(Comparator.comparingInt(o -> o));
         int result = 0;
         for (int i = 0; i < 32; i++) {
             int mask = 1<< i;

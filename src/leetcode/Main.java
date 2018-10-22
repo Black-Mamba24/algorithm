@@ -1,53 +1,59 @@
 package leetcode;
 
-import java.util.*;
+import java.util.PriorityQueue;
 
 /**
- * Created by zhaiyi on 2018/10/14.
+ * Created by zhaiyi on 2018/10/19.
  */
 public class Main {
+    public PriorityQueue<Integer> q_max = new PriorityQueue<>((o1, o2) -> o2 - o1);
+    public PriorityQueue<Integer> q_min = new PriorityQueue<>((o1, o2) -> o1 - o2);
+    public int k = 0;
+
     public static void main(String[] args) {
-        Main main = new Main();
-        System.out.println(main.champagneTower(6,3,1));
+        Main main = new Main(3, new int[]{4,5,8,2});
+        main.add(3);
+        main.add(5);
+        main.add(10);
+        main.add(9);
+        main.add(4);
     }
 
-    public double champagneTower(int poured, int query_row, int query_glass) {
-        double[][] glass = new double[query_row + 1][query_row + 1];
-        glass[0][0] = poured;
-        if (poured == 0) {
-            return 0.0;
-        } else if (poured == 1) {
-            if (query_row == 0 && query_glass == 0) {
-                return 1.0;
-            } else {
-                return 0.0;
+    public Main(int k, int[] nums) {
+        if (k == 1) {
+            for (int i = 0; i < nums.length; i++) {
+                q_max.offer(nums[i]);
             }
-        }
-        for (int i = 1; i < query_row + 1; i++) {
-            for (int j = 0; j < i + 1; j++) {
-                if (j == 0) {
-                    //每行第一个
-                    glass[i][j] = (double) (glass[i - 1][j] - 1) / 2;
-                } else if (j == i) {
-                    //每行最后一个
-                    glass[i][j] = (double) (glass[i - 1][j - 1] - 1) / 2;
+        } else {
+            for (int i = 0; i < nums.length; i++) {
+                if (i < k - 1) {
+                    q_max.offer(nums[i]);
                 } else {
-                    if (glass[i - 1][j - 1] > 1) {
-                        glass[i][j] += (double) (glass[i - 1][j - 1] - 1) / 2;
-                    }
-                    if (glass[i - 1][j] > 1) {
-                        glass[i][j] += (double) (glass[i - 1][j] - 1) / 2;
-                    }
+                    q_max.offer(nums[i]);
+                    int n = q_max.poll();
+                    q_min.offer(n);
                 }
             }
         }
-        if (glass[query_row][query_glass] > 1.0) {
-            return 1.0;
-        } else if (glass[query_row][query_glass] < 0.0) {
-            return 0.0;
-        } else {
-            return glass[query_row][query_glass];
-        }
+
+        this.k = k;
     }
 
+    public int add(int val) {
+        if (k == 1) {
+            q_max.offer(val);
+            return q_max.peek();
+        } else {
+            q_max.offer(val);
+            if (q_max.size() > k - 1) {
+                int n = q_max.poll();
+                q_min.offer(n);
+                System.out.println(q_min.peek());
+                return q_min.peek();
+            } else {
+                return 0;
+            }
+        }
+
+    }
 }
