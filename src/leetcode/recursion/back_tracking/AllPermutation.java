@@ -1,4 +1,4 @@
-package leetcode.recursion;
+package leetcode.recursion.back_tracking;
 
 /**
  * 递归题目一般有三种：

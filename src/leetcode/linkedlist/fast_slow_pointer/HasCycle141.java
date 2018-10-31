@@ -10,7 +10,7 @@ import leetcode.ListNode;
  思路：明显的快慢指针法
  * Created by zhaiyi on 2018/8/31.
  */
-public class HasCycle {
+public class HasCycle141 {
     public boolean hasCycle(ListNode head) {
         ListNode slow, fast;
         slow = fast = head;

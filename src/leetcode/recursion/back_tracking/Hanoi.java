@@ -1,4 +1,4 @@
-package leetcode.recursion;
+package leetcode.recursion.back_tracking;
 
 import java.util.Stack;
 

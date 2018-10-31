@@ -9,9 +9,9 @@ import leetcode.ListNode;
  * 注意：第二次相遇之前可能出现永远不相遇的情况，需要判断slow是否等于head，如果是一个完整环，永远不会相遇。
  * Created by zhaiyi on 2018/10/21.
  */
-public class FindCycle {
+public class FindCycle142 {
     public static void main(String[] args) {
-        FindCycle findCycle = new FindCycle();
+        FindCycle142 findCycle142 = new FindCycle142();
         ListNode head = new ListNode(1);
         head.next = head;
 //        head.next = new ListNode(2);
@@ -19,7 +19,7 @@ public class FindCycle {
 //        head.next.next.next = new ListNode(4);
 //        head.next.next.next.next = head.next.next.next;
 
-        System.out.println(findCycle.detectCycle(head));
+        System.out.println(findCycle142.detectCycle(head));
     }
 
     public ListNode detectCycle(ListNode head) {
