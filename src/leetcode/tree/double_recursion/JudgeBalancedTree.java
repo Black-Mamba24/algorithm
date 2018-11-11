@@ -27,7 +27,7 @@ import leetcode.tree.TreeNode;
  这道题的难点在于并非遍历一遍就能解决问题，每次递归都计算了当前节点左右子树的高度，如果不满足，则分别计算左子树的左右子树和右子树的左右子树
  只有当每个节点的左右子树高度相差都小于1时才算完成
 
- 另外数的高度可以这样计算也可以按TreeMaxDeep计算
+ 另外树的高度可以这样计算也可以按TreeMaxDeep计算
  * Created by zhaiyi on 2018/8/29.
  */
 public class JudgeBalancedTree {

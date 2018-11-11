@@ -1,4 +1,4 @@
-package leetcode.tree.resursion;
+package leetcode.tree.dfs;
 
 import leetcode.tree.TreeNode;
 
@@ -14,7 +14,7 @@ import leetcode.tree.TreeNode;
  思路：同时递归左右子树
  * Created by zhaiyi on 2018/8/28.
  */
-public class SymmetricTree {
+public class SymmetricTree101 {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {
             return true;
