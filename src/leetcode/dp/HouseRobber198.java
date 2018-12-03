@@ -14,7 +14,11 @@ package leetcode.dp;
  偷窃到的最高金额 = 1 + 3 = 4 。
  * Created by zhaiyi on 2018/9/5.
  */
-public class HouseRobber {
+public class HouseRobber198 {
+    public static void main(String[] args) {
+        HouseRobber198 houseRobber198 = new HouseRobber198();
+        houseRobber198.rob(new int[]{2,7,9,6,1});
+    }
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
