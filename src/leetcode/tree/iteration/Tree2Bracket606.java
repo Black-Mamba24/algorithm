@@ -1,4 +1,6 @@
-package leetcode.tree;
+package leetcode.tree.iteration;
+
+import leetcode.tree.TreeNode;
 
 /**
  * 根据二叉树创建字符串
