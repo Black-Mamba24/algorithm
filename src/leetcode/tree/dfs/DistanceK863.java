@@ -1,4 +1,6 @@
-package leetcode.tree;
+package leetcode.tree.dfs;
+import leetcode.tree.TreeNode;
+
 import java.util.*;
 
 /**
