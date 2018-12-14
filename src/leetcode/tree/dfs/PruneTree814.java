@@ -63,6 +63,7 @@ public class PruneTree814 {
                 node.right = null;
             }
             return node.val != 0 || left || right;
+
         }
     }
 }
