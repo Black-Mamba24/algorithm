@@ -20,7 +20,7 @@ import leetcode.tree.TreeNode;
  思路：利用二叉搜索树的特性，只要落在[p, q]之内就是最近公共祖先，否则递归左子树或右子树
  * Created by zhaiyi on 2018/9/6.
  */
-public class SameAncestor {
+public class CommonAncestor235 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (p == null || q == null) {
             return null;
