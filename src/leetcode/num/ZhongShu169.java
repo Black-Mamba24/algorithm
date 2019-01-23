@@ -17,7 +17,7 @@ package leetcode.num;
  空间复杂度最低，抵消法
  * Created by zhaiyi on 2018/9/4.
  */
-public class ZhongShu {
+public class ZhongShu169 {
     public int majorityElement(int[] nums) {
         int counter = 0;
         int result = 0;
