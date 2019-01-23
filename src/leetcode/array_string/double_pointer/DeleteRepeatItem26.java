@@ -8,24 +8,16 @@ package leetcode.array_string.double_pointer;
  * 注意创建新数组（覆盖）时要先移动指针
  * Created by zhaiyi on 2018/8/24.
  */
-public class DeleteRepeatItem {
+public class DeleteRepeatItem26 {
     public static void main(String[] args) {
-        DeleteRepeatItem deleteRepeatItem = new DeleteRepeatItem();
+        DeleteRepeatItem26 deleteRepeatItem26 = new DeleteRepeatItem26();
         int[] array = new int[]{1,1,2,3,3,4,4,5,6,7,8};
-        int len = deleteRepeatItem.removeDuplicates(array);
+        int len = deleteRepeatItem26.removeDuplicates(array);
         for (int i = 0; i < len; i++) {
             System.out.print(array[i] + " ");
         }
     }
     public int removeDuplicates(int[] nums) {
-//        int j = 0, i = 0;
-//        while(i < nums.length) {
-//            while(i + 1 < nums.length && nums[i] == nums[i+1]) {
-//                i++;
-//            }
-//            nums[j++] = nums[i++];
-//        }
-//        return j;
         int i = 0;
         for (int j = 1; j < nums.length; j++) {
             if (nums[j] != nums[i]) {
