@@ -3,12 +3,23 @@ package leetcode.hashmap;
 import java.util.*;
 
 /**
+ * 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的一个字母异位词。
+ 示例 1:
+
+ 输入: s = "anagram", t = "nagaram"
+ 输出: true
+ 示例 2:
+
+ 输入: s = "rat", t = "car"
+ 输出: false
+ 说明:
+ 你可以假设字符串只包含小写字母。
  * Created by zhaiyi on 2018/9/8.
  */
-public class Anagram {
+public class Anagram242 {
     public static void main(String[] args) {
-        Anagram anagram = new Anagram();
-        System.out.println(anagram.isAnagram("dgqztusjuu","dqugjzutsu"));
+        Anagram242 anagram242 = new Anagram242();
+        System.out.println(anagram242.isAnagram("dgqztusjuu","dqugjzutsu"));
     }
     public boolean isAnagram(String s, String t) {
         if (s == null && t == null || s.equals("") && s.equals("")) {
