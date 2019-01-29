@@ -9,7 +9,7 @@ import java.util.Stack;
 /**
  * Created by zhaiyi on 2018/10/17.
  */
-public class IterationTraverse {
+public class InorderTraverse94 {
 //    public List<Integer> preorder(TreeNode root) {
 //
 //    }
