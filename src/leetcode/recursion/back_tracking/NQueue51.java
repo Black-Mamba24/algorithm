@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * 给定一个整数 n，返回所有不同的 n 皇后问题的解决方案。
+ */
 public class NQueue51 {
     public static void main(String[] args) {
         NQueue51 nQueue51 = new NQueue51();
