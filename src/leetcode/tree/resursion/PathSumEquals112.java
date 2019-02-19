@@ -20,7 +20,7 @@ import leetcode.tree.TreeNode;
  返回 true, 因为存在目标和为 22 的根节点到叶子节点的路径 5->4->11->2。
  * Created by zhaiyi on 2018/8/29.
  */
-public class PathSumEquals {
+public class PathSumEquals112 {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) {
             return false;
